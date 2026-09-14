@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.plant-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    padding: 20px;
+    width: 500px;
+    min-height: 300px;
+}
+
+.plant-card-body button{
+    margin-top: auto;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 35px;
+    background-color: lightgreen;
+}
+
+.hidden{
+    display: none;
+}
