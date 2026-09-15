@@ -2,9 +2,11 @@ body {
     margin: 0;
     background-color: lightblue;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
+    min-height: 100vh;
+    gap: 20px;
+    justify-content: center;
 }
 
 .plant-card-body{
@@ -26,6 +28,22 @@ body {
     background-color: lightgreen;
 }
 
-.hidden{
+#activities-panel.hidden{
     display: none;
+}
+
+
+#activities-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activities-panel form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
 }

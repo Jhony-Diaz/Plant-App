@@ -14,9 +14,16 @@
     </div>
 
     <aside id="activities-panel" class="body-panel hidden">
-        <button class="body-activities">Cardio</button>
-        <button class="body-activities">Lift</button>
-        <button class="body-activities">Stretch</button>
+        <form action="" id="body-form">
+            <h3>Log Activity</h3>
+            <button data-activity="Cardio" type="button" class="body-activities">Cardio</button>
+            <button data-activity="Lift" type="button" class="body-activities">Lift</button>
+            <button data-activity="Stretch" type="button" class="body-activities">Stretch</button>
+            <label for="body-minutes">Log your minutes</label>
+            <input type="number" id="body-minutes" min="1" placeholder="minutes" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="body-result">result</p>
     </aside>
 
     <script type="module" src="home.js"></script>
